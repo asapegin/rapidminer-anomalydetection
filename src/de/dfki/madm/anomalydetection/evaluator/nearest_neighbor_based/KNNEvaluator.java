@@ -59,7 +59,7 @@ public class KNNEvaluator implements Evaluator {
 			if (logger != null)
 				this.logger.logNote("Thread " + start + " " + end + " started!");
 			for (int i = start; i < end; i++) {
-				for (int j = 0; j < n; j++) {
+				for (int j = 0; j < i; j++) {
 					if (i == j)
 						continue;
 					if(newCollection){
